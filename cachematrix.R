@@ -5,7 +5,6 @@
 ## In addition, if the matrix object already had the cached inverse result, the cacheSolve()
 ## function will just return it without spending expensive resource to re-compute it.
 
-
 ## This function creates a special "matrix" object that can cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -56,5 +55,6 @@ cacheSolve <- function(x, ...) {
   ## Cache the inverse matrix of X for next retrieval
   x$setInverse(invMatrix)
   
+  ## Display the inverse matrix on console output
   invMatrix
 }
