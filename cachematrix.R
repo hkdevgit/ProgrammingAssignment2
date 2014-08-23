@@ -55,6 +55,5 @@ cacheSolve <- function(x, ...) {
   ## Cache the inverse matrix of X for next retrieval
   x$setInverse(invMatrix)
   
-  ## Display the inverse matrix on console output
   invMatrix
 }
